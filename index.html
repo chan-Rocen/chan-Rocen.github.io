@@ -4,34 +4,66 @@
   <title>My Link Page</title>
   <style>
     body {
-      text-align: center; /* 全部内容居中 */
+      text-align: center;
       font-family: Arial, sans-serif;
     }
 
-    h1 {
-      font-size: 40px; /* 放大标题 */
+    .spacer {
+      height: 300px; /* 约等于空20行 */
     }
 
-    a {
+    h1 {
+      font-size: 40px;
+    }
+
+    .banner {
+      margin: 20px 0;
+    }
+
+    .banner img {
+      width: 80%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .btn {
       display: inline-block;
       margin-top: 20px;
-      font-size: 30px; /* 放大按钮文字 */
-      color: red; /* 红色字体 */
-      text-decoration: none; /* 去掉下划线 */
+      padding: 15px 30px;
+      font-size: 28px;
+      color: white;
+      background-color: red;
+      text-decoration: none;
+      border-radius: 8px;
       font-weight: bold;
     }
 
-    a:hover {
-      color: darkred; /* 鼠标悬停效果（可选） */
+    .btn:hover {
+      background-color: darkred;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- 页面顶部空白 -->
+  <div class="spacer"></div>
+
+  <!-- 标题 -->
   <h1>Play games and win big prizes</h1>
 
-  <a href="https://www.1bn880.com/?affiliateCode=bn136">PLAY NOW</a>
+  <!-- 图片（可点击跳转） -->
+  <div class="banner">
+    <a href="https://www.1bn880.com/?affiliateCode=bn136">
+      <img src="image.jpg" alt="Promo Banner">
+    </a>
+  </div>
+
+  <!-- 按钮 -->
+  <a href="https://www.1bn880.com/?affiliateCode=bn136" class="btn">
+    PLAY NOW
+  </a>
 
 </body>
 </html>
